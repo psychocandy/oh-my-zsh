@@ -67,3 +67,7 @@ alias ggpush='git push origin $(current_branch)'
 compdef ggpush=git
 alias ggpnp='git pull origin $(current_branch) && git push origin $(current_branch)'
 compdef ggpnp=git
+
+# shorter what changed:
+alias gwc='git whatchanged -p --abbrev-commit --pretty=medium'
+compdef ggpull=git
